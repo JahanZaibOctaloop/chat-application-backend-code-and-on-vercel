@@ -31,7 +31,6 @@ const io = new Server(server, {
         allowedHeaders: ['Content-Type', 'Authorization'], 
         credentials: true,
     },
-    transports: ['websocket', 'polling'],
 });
 
 global.onlineUsers = new Map();
